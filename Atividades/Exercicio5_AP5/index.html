@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viweport" content="width=device-width, initial-scale=1.0">
+	<title>Página da Marina</title>
+</head>
+<body>
+
+<h1>INSCRIÇÃO</h1>
+<form>
+        <fieldset>
+        <legend>Dados Pessoais:</legend>
+        <label for="fname">Primeiro nome:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="snome">Sobrenome:</label><br>
+        <input type="text" id="snome" name="snome" required>
+
+        <action action="/action_page.php">
+            <legend></legend>
+            <label for="email"> Email:</label><br>
+            <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"><br>
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" required>
+        </fieldset>
+</form>
+
+<h2>Gêneros Literários</h2>
+<form>
+<select id="livros" name="livros">
+    <option value="Romance">Romance</option>
+    <option value="Suspense">Suspense</option>
+    <option value="Terror">Terror</option>
+    <option value="Fantasia">Fantasia</option>
+    <option value="Auto-Ajuda">Auto-Ajuda</option>
+</select>
+</form>
+
+<h2>Onde costuma comprar livros?</h2>
+<form>
+    <input list="Lojas">
+    <datalist id="Lojas">
+    <option value="Amazon">
+    <option value="Submarino">
+    <option value="Americanas">
+    <option value="Livrarias">
+    <option value="Sebo">
+    </datalist>
+</form>
+
+<h2>Quando foi a última vez que comprou algun(s) livro(s)?</h2>
+<input type="datetime-local" id="question-time"
+       name="question-time" value="2021-06-27T00:30"
+       min="2014-06-07T00:00" max="2021-07-30T00:00">
+
+<h2>Conte sobre sua leitural atual</h2>
+<textarea name="message" rows="10" cols="30">
+</textarea>
+
+<a href="file:///C:/Users/marin/Pasta%20Visual%20Studio%20-%20Marina/Exercicio5_AP5/1index.html"><button type="button" onclick="alert('Seu cadastro foi realizado com sucesso :)')">
+    Submit
+</button></a>
+</action>
+
+</body>
+</html>
